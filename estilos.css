@@ -1,0 +1,57 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+/* Contenedor principal */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Imagen de fondo responsiva */
+.bg-image {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay con imagen encima */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.overlay-img {
+  max-width: 80%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay-img {
+    max-width: 90%;
+  }
+}
