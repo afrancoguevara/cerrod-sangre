@@ -2,110 +2,121 @@
 <html lang="es-MX">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Cerro de Sangre - Mezcal Artesanal, Santiago Matatlán, Oax.</title>
-
-  <meta name="description" content="Tienda de mezcal artesanal en Ciudad de México. Mezcal elaborado en Santiago Matatlán, Oaxaca, cuna del mezcal tradicional." />
-  <meta name="keywords" content="mezcal artesanal, mezcal oaxaca, cerro de sangre, santiago matatlán, mezcal mexicano, bebida tradicional, destilado de agave" />
-  <meta name="author" content="Cerro de Sangre" />
-  <meta name="robots" content="index, follow" />
-  <meta name="geo.region" content="MX-CMX" />
-  <meta name="geo.placename" content="Ciudad de México" />
-  <meta name="language" content="Spanish" />
+  <meta name="description" content="Mezcal artesanal elaborado en Santiago Matatlán, Oaxaca. Venta en CDMX. 100% agave espadín, doble destilación." />
   <link rel="canonical" href="https://www.cerrodesangre.com/" />
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/img/favicon.ico" sizes="any" />
+  <link rel="icon" href="/img/icon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/img/icon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="stylesheet" href="estilos.css" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cerrodesangre.com/" />
+  <meta property="og:title" content="Cerro de Sangre - Mezcal Artesanal" />
+  <meta property="og:description" content="Mezcal artesanal de Santiago Matatlán, Oaxaca. Venta en CDMX." />
+  <meta property="og:image" content="https://www.cerrodesangre.com/img/og-cover.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cerro de Sangre - Mezcal Artesanal" />
+  <meta name="twitter:description" content="Mezcal artesanal de Santiago Matatlán, Oaxaca. Venta en CDMX." />
+  <meta name="twitter:image" content="https://www.cerrodesangre.com/img/og-cover.jpg" />
+
+  <!-- Preload hero (opcional, ajusta rutas y tamaños reales) -->
+  <link rel="preload" as="image" href="/img/bg-desktop.avif" imagesrcset="/img/bg-desktop.avif 1920w, /img/bg-desktop.webp 1920w, /img/bg-desktop.jpeg 1920w" imagesizes="100vw">
+  <link rel="preload" as="image" href="/img/bg-mobile.avif" media="(max-width: 768px)">
+
+  <link rel="stylesheet" href="/estilos.css" media="all" />
 
   <!-- Schema: LocalBusiness -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Cerro de Sangre",
-      "image": "https://www.cerrodesangre.com/img/logo.png",
-      "@id": "https://www.cerrodesangre.com",
-      "url": "https://www.cerrodesangre.com",
-      "telephone": "+52-55-4830-8363",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Franz Hals 67",
-        "addressLocality": "Ciudad de México",
-        "postalCode": "01460",
-        "addressCountry": "MX"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 19.4204,
-        "longitude": -99.1628
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-        ],
-        "opens": "11:00",
-        "closes": "20:00"
-      },
-      "sameAs": [
-        "https://www.instagram.com/cerrodesangre"
-      ],
-      "description": "Tienda de mezcal artesanal en Ciudad de México. Mezcal elaborado en Santiago Matatlán, Oaxaca, cuna del mezcal tradicional.",
-      "priceRange": "$$",
-      "founder": {
-        "@type": "Person",
-        "name": "AFGA"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "México"
-      }
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cerro de Sangre",
+    "image": "https://www.cerrodesangre.com/img/logo.png",
+    "@id": "https://www.cerrodesangre.com",
+    "url": "https://www.cerrodesangre.com",
+    "telephone": "+52-55-4830-8363",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Franz Hals 67",
+      "addressLocality": "Ciudad de México",
+      "postalCode": "01460",
+      "addressCountry": "MX"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 19.4204, "longitude": -99.1628 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "11:00",
+      "closes": "20:00"
+    }],
+    "sameAs": ["https://www.instagram.com/cerrodesangre"],
+    "description": "Tienda de mezcal artesanal en Ciudad de México. Mezcal elaborado en Santiago Matatlán, Oaxaca, cuna del mezcal tradicional.",
+    "priceRange": "$$",
+    "founder": { "@type": "Person", "name": "AFGA" },
+    "areaServed": { "@type": "Place", "name": "México" },
+    "inLanguage": "es-MX"
+  }
   </script>
 
   <!-- Schema: Product -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Mezcal Artesanal Cerro de Sangre",
-      "image": [
-        "https://www.cerrodesangre.com/img/mezcal-botella.jpg"
-      ],
-      "description": "Mezcal artesanal elaborado en Santiago Matatlán, Oaxaca. 100% agave espadín, doble destilación, sabor ahumado y notas cítricas.",
-      "sku": "CDS-ESPADIN-750",
-      "brand": {
-        "@type": "Brand",
-        "name": "Cerro de Sangre"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://www.cerrodesangre.com/producto/mezcal-artesanal",
-        "priceCurrency": "MXN",
-        "price": "650.00",
-        "itemCondition": "https://schema.org/NewCondition",
-        "availability": "https://schema.org/InStock"
-      },
-      "productionDate": "2025",
-      "countryOfOrigin": "MX"
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Mezcal Artesanal Cerro de Sangre",
+    "image": ["https://www.cerrodesangre.com/img/mezcal-botella.jpg"],
+    "description": "Mezcal artesanal de Santiago Matatlán, Oaxaca. 100% agave espadín, doble destilación, notas cítricas y ahumadas.",
+    "sku": "CDS-ESPADIN-750",
+    "brand": { "@type": "Brand", "name": "Cerro de Sangre" },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.cerrodesangre.com/producto/mezcal-artesanal",
+      "priceCurrency": "MXN",
+      "price": "650.00",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
+    },
+    "productionDate": "2025",
+    "countryOfOrigin": "MX",
+    "inLanguage": "es-MX"
+  }
   </script>
 </head>
 <body>
-
   <main class="hero">
-    <!-- Imagen de fondo (desktop/móvil adaptativa) -->
     <picture class="bg-image">
-      <source media="(max-width: 768px)" srcset="img/bg-mobile.jpeg" />
-      <img src="img/bg-desktop.jpeg " alt="Fondo Mezcal Artesanal" />
+      <!-- Móvil primero -->
+      <source type="image/avif" media="(max-width: 768px)" srcset="/img/bg-mobile.avif" />
+      <source type="image/webp" media="(max-width: 768px)" srcset="/img/bg-mobile.webp" />
+      <source media="(max-width: 768px)" srcset="/img/bg-mobile.jpeg" />
+      <!-- Desktop -->
+      <source type="image/avif" srcset="/img/background1024.avif" />
+      <source type="image/webp" srcset="/img/background1024.webp" />
+      <img
+        src="/img/background1024.webp"
+        alt="cerro de sangre mezcal artesanal"
+        aria-hidden="true"
+        width="1536" height="1024"
+        decoding="async"
+        loading="eager"
+        fetchpriority="high"
+      />
     </picture>
-<!---
-    
-    <div class="overlay">
-      <img src="img/overlay.png" alt="Logotipo Cerro de Sangre" class="overlay-img" />
-    </div>-->
-  </main>
 
+    <!-- Si usas overlay/logo, añade alt descriptivo -->
+    <!--
+    <div class="overlay">
+      <img src="/img/overlay.png" alt="Logotipo de Cerro de Sangre" class="overlay-img" width="600" height="200" decoding="async" loading="lazy"/>
+    </div>
+    -->
+  </main>
 </body>
 </html>
